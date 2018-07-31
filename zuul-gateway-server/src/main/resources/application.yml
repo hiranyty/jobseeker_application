@@ -1,0 +1,28 @@
+zuul:
+  ignoredServices: "*"
+  routes:   
+    jobseeker:
+      sensitiveHeaders:
+      path: /api/**
+      url: http://localhost:8805
+    auth:
+      sensitiveHeaders:
+      path: /
+      url: http://localhost:8802
+    uaa:
+      sensitiveHeaders:
+      path: /uaa/**
+      url: http://localhost:8804           
+          
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      access-token-uri: http://localhost:8765/uaa/oauth/token
+      user-authorization-uri: http://localhost:8765/uaa/oauth/authorize
+      client-id: web_app
+      client-secret: secret
+    resource:
+      jwt:
+        key-value: 123
