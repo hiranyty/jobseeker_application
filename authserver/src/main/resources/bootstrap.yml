@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: authserver
+    
+#server:
+    #port: 8804
