@@ -17,7 +17,7 @@ public class AuthserverApplication extends WebSecurityConfigurerAdapter {
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		auth.inMemoryAuthentication().withUser("harry123@cognizant.com").password("harry").authorities("ROLE_VIEW").and()
 				.withUser("jack123@cognizant.com").password("jack").authorities("ROLE_VIEW", "ROLE_UPDATE").and()
-				.withUser("john123@cognizant.com").password("john").authorities("UPDATE");
+				.withUser("john123@cognizant.com").password("john").authorities("ROLE_UPDATE");
 	}
 
 	@Override
