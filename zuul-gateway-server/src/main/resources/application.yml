@@ -4,11 +4,7 @@ zuul:
     jobseeker:
       sensitiveHeaders:
       path: /api/**
-      url: http://localhost:8805
-    auth:
-      sensitiveHeaders:
-      path: /
-      url: http://localhost:8802
+      url: http://localhost:8805   
     uaa:
       sensitiveHeaders:
       path: /uaa/**
