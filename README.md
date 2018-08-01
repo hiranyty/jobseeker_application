@@ -4,7 +4,7 @@ Jobseeker Management Application
 This project use zuul gateway sever, oauth2 authorization  server, jobseeker ui in reactjs and Jobseeker application as a resource server.
 
 
-##Zuul Gateway server :
+## Zuul Gateway server :
 
 All the routes from UI navigate through zuul gateway server or edge service
 
