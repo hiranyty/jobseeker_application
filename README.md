@@ -13,7 +13,7 @@ http ://localhost:8765/api/v1/jobseekers/load
 http ://localhost:8765/uaa/oauth/token
 
 
-AuthServer :
+## AuthServer :
 
 Auth server is configured using Oauth2 configuration. Authentication is implemented using in memory authentication using user credentials. You can change this implementation for database authentication or identity provider such as okta.   
 
@@ -23,7 +23,7 @@ Tokenstore is implemented using symmetric key (123). You can change this impleme
 http ://localhost:8804
 
 
-Resource Server (Jobseeker application) :
+## Resource Server (Jobseeker application) :
 
 Jobseeker application is implemented as a resource server which is managed jobseeker information.
 
@@ -31,7 +31,7 @@ Jobseeker load endpoint - /api/v1/jobseekers/load
 
 http ://localhost:8805
 
-Jobseeker UI- 
+## Jobseeker UI- 
 
 This application is developed using ReactJS. Application consists 2 pages. 
 1) Login Page
