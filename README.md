@@ -35,9 +35,16 @@ http ://localhost:8805
 
 This application is developed using ReactJS. Application consists 2 pages. 
 1) Login Page
-2) Jobseeker Page - (Jobseeker load Link)
 
-http ://localhost:3000
+   http ://localhost:3000/login
+   http:///localhost:5000/login
+
+2) Jobseeker Page  - Load Jobseeker Link 
+
+   http ://localhost:3000/jobseeker
+   http:///localhost:5000/jobseeker
+
+
 
 
 
